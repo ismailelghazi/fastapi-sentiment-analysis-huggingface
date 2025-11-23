@@ -10,11 +10,7 @@ This project is a **FastAPI backend** for a sentiment analysis application. It u
 - [Tech Stack](#tech-stack)  
 - [Environment Variables](#environment-variables)  
 - [Docker Setup](#docker-setup)  
-- [Running Tests](#running-tests)  
 - [API Endpoints](#api-endpoints)  
-- [Contributing](#contributing)  
-- [License](#license)  
-
 ---
 
 ## Features
@@ -75,3 +71,13 @@ HF_API_KEY=your_huggingface_api_key
   ```
   docker-compose down
   ```
+## API Endpoints
+Auth
+
+POST ```/auth/register``` - Register a new user
+
+POST ```/auth/login ```- Login and get JWT token
+
+Sentiment
+
+POST ```/sentiment``` - Analyze text sentiment (requires JWT)
